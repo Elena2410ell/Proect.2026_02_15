@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Параметры композиционного материала</title>
+</head>
+
+<head>
+    <h1>Заполните параметры</h1>
+</head>
+
+<body>
+    <form action="{{url_for('main')}}" method="POST">
+        <fieldset>
+            <small>Соотношение матрица-наполнитель</small>
+            <input type="number" step="any" name="sootnoshenie">
+            <br>
+            <br>
+            <small>Плотность, кг/м3</small>
+            <input type="number" step="any" name="plotnost">
+            <br>
+            <br> <small>модуль упругости, ГПа</small>
+            <input type="number" step="any" name="modul_upr">
+            <br>
+            <br>
+            <small>Количество отвердителя, м.%</small>
+            <input type="number" step="any" name="kol_otverd">
+            <br>
+            <br>
+            <small>Содержание эпоксидных групп,%_2</small>
+            <input type="number" step="any" name="soder_e_g">
+            <br>
+            <br>
+            <small>Температура вспышки, С_2</small>
+            <input type="number" step="any" name="temp_vsp">
+            <br>
+            <br>
+            <small>Поверхностная плотность, г/м2</small>
+            <input type="number" step="any" name="pover_plotnost">
+            <br>
+            <br>
+            <small>Потребление смолы, г/м2</small>
+            <input type="number" step="any" name="potreb_smol">
+            <br>
+            <br>
+            <small>Угол нашивки, град, г/м2</small>
+            <input type="number" step="any" name="ugol">
+            <br>
+            <br>            
+            <small>Шаг нашивки</small>
+            <input type="number" step="any" name="shag">
+            <br>
+            <br>
+            <small>Плотность нашивки</small>
+            <input type="number" step="any" name="plotnost_nash">
+            <br>
+            <br>
+            <button type="submit">Получить значение Модуля упругости при растяжении</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>
